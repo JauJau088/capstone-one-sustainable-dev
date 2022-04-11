@@ -1,5 +1,16 @@
-// Variables
-$grey: #555555;
+// Templates & variables
+@font-face {
+  font-family: CocoGoose;
+  src: url('../../fonts/Cocogoose Pro-trial.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Encode+Sans:wght@300;400;500;600;700;900&family=Lato:wght@300;400;500;600;700;900&display=swap');
+
+$primary: #ec5242;
+$secondary: #272a31;
+$secondary-shade1: #555555;
+$secondary-shade2: #d3d3d3;
+$background: #f7f7f7;
 
 // Global
 html {
@@ -13,7 +24,39 @@ html {
 }
 
 body {
+  font-family: 'Encode Sans', Arial, sans-serif;
+  color: $secondary-shade1;
   margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-size: 12px;
+  margin: 0;
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.7em;
+  font-size: 12px;
 }
 
 ul {
@@ -21,20 +64,37 @@ ul {
   padding: 0;
 }
 
-// Debug only
-.DEBUG-display-none {
+// Global classes
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.desktop-only {
   display: none;
 }
 
-// Global classes
-.desktop-only {
+// Debug only
+.DEBUG-DISPLAY-NONE {
   display: none;
 }
 
 // Nav
 .nav-container {
-  display: flex;
-  justify-content: center;
+  position: fixed;
 }
 
 nav {
@@ -52,5 +112,42 @@ nav {
 
 .hamburger-line {
   width: 100%;
-  border-bottom: 5px solid $grey;
+  border-bottom: 5px solid $secondary-shade1;
+}
+
+// Welcome
+.bg-welcome {
+  background-image: url('../../images/backgrounds/bg-welcome.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.welcome-content-container {
+  padding: 99px 18px 74px 18px;
+}
+
+.welcome-subtitle {
+  color: $primary;
+}
+
+.welcome-title {
+  background-image: url('../../images/backgrounds/abstract-prism.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.welcome-description {
+  background-color: $background;
+  border: 3px solid white;
+  margin: 24px 0 16px 0;
+  padding: 19px;
+
+  p {
+    margin: 0;
+  }
 }
