@@ -363,10 +363,17 @@ nav {
 }
 
 // Partner
-.partner-content-container {
+.partners-bg {
   background-color: $secondary-shade1;
+}
 
+.partner-content-container {
   h3 {
     color: $background;
   }
+}
+
+// Footer
+.footer-content-container {
+  padding: 35px 42px;
 }

@@ -332,11 +332,16 @@ nav {
   color: #f7f7f7;
 }
 
-.partner-content-container {
+.partners-bg {
   background-color: #555555;
 }
+
 .partner-content-container h3 {
   color: #f7f7f7;
+}
+
+.footer-content-container {
+  padding: 35px 42px;
 }
 
 /*# sourceMappingURL=style.css.map */
