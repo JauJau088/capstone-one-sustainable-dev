@@ -326,3 +326,38 @@ nav {
     margin: 34px 0;
   }
 }
+
+// Past events
+.past-content-container {
+  text-align: center;
+  padding: 0 38px;
+}
+
+.past-card-container {
+  margin-top: 32px;
+  margin-bottom: 36px;
+}
+
+.past-card-container > *:last-child {
+  margin-bottom: 0;
+}
+
+.past-card {
+  width: 300px;
+  height: 165px;
+  background-color: $primary;
+  margin-bottom: 14px;
+
+  h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: $background;
+    margin-bottom: 13px;
+  }
+
+  p {
+    font-size: 13px;
+    font-weight: 600;
+    color: $background;
+  }
+}
