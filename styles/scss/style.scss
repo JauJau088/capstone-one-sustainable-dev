@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Encode+Sans:wght@300;400;500;600;700;900&family=Lato:wght@300;400;500;600;700;900&display=swap');
 
 $primary: #ec5242;
+$primary-shade1: #ff4f38;
 $secondary: #272a31;
 $secondary-shade1: #555555;
 $secondary-shade2: #d3d3d3;
@@ -29,30 +30,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 30px;
-  margin: 0;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0;
-}
-
-h3 {
-  font-weight: 800;
-  font-size: 24px;
-  margin: 0;
-  margin-bottom: 8px;
-}
-
-h4 {
-  font-size: 12px;
-  margin: 0;
-}
-
 p {
   font-weight: 500;
   line-height: 1.7em;
@@ -62,6 +39,10 @@ p {
 ul {
   list-style: none;
   padding: 0;
+}
+
+button {
+  font-family: 'Encode Sans', Arial, sans-serif;
 }
 
 // Global classes
@@ -85,6 +66,15 @@ ul {
 
 .desktop-only {
   display: none;
+}
+
+.button {
+  background-color: $primary-shade1;
+  border: none;
+  color: $background;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 26px 42px;
 }
 
 // Debug only
@@ -125,6 +115,30 @@ nav {
 
 .welcome-content-container {
   padding: 99px 18px 74px 18px;
+
+  h1 {
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  h3 {
+    font-weight: 800;
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  
+  h4 {
+    font-size: 12px;
+    margin: 0;
+  }
 }
 
 .welcome-subtitle {
@@ -136,8 +150,8 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -150,4 +164,51 @@ nav {
   p {
     margin: 0;
   }
+}
+
+// Program
+.bg-program {
+  background-image: url('../../images/backgrounds/x-pattern.svg');
+  background-position: center center;
+}
+
+.program-content-container {
+  padding: 12px;
+  padding-bottom: 36px;
+
+  h3 {
+    color: $background;
+    margin-top: 20px;
+    margin-bottom: 11px;
+  }
+
+  hr {
+    width: 31px;
+    border: 1px solid $primary;
+    margin: 0;
+    margin-bottom: 24px;
+  }
+
+  h4 {
+    width: 90px;
+    min-width: 90px;
+    color: $primary;
+    margin: 0;
+  }
+
+  p {
+    color: $background;
+    margin: 0;
+  }
+
+  .button {
+    margin-top: 26px;
+  }
+}
+
+.program-card {
+  background-color: rgba($color: white, $alpha: 0.1);
+  margin-bottom: 8px;
+  padding: 13px;
+  padding-left: 0;
 }

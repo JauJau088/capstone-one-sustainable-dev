@@ -19,30 +19,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 30px;
-  margin: 0;
-}
-
-h2 {
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0;
-}
-
-h3 {
-  font-weight: 800;
-  font-size: 24px;
-  margin: 0;
-  margin-bottom: 8px;
-}
-
-h4 {
-  font-size: 12px;
-  margin: 0;
-}
-
 p {
   font-weight: 500;
   line-height: 1.7em;
@@ -52,6 +28,10 @@ p {
 ul {
   list-style: none;
   padding: 0;
+}
+
+button {
+  font-family: "Encode Sans", Arial, sans-serif;
 }
 
 .flex-row {
@@ -74,6 +54,15 @@ ul {
 
 .desktop-only {
   display: none;
+}
+
+.button {
+  background-color: #ff4f38;
+  border: none;
+  color: #f7f7f7;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 26px 42px;
 }
 
 .DEBUG-DISPLAY-NONE {
@@ -112,6 +101,26 @@ nav {
 .welcome-content-container {
   padding: 99px 18px 74px 18px;
 }
+.welcome-content-container h1 {
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0;
+}
+.welcome-content-container h2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+}
+.welcome-content-container h3 {
+  font-weight: 800;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.welcome-content-container h4 {
+  font-size: 12px;
+  margin: 0;
+}
 
 .welcome-subtitle {
   color: #ec5242;
@@ -122,8 +131,8 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -135,6 +144,47 @@ nav {
 }
 .welcome-description p {
   margin: 0;
+}
+
+.bg-program {
+  background-image: url("../../images/backgrounds/x-pattern.svg");
+  background-position: center center;
+}
+
+.program-content-container {
+  padding: 12px;
+  padding-bottom: 36px;
+}
+.program-content-container h3 {
+  color: #f7f7f7;
+  margin-top: 20px;
+  margin-bottom: 11px;
+}
+.program-content-container hr {
+  width: 31px;
+  border: 1px solid #ec5242;
+  margin: 0;
+  margin-bottom: 24px;
+}
+.program-content-container h4 {
+  width: 90px;
+  min-width: 90px;
+  color: #ec5242;
+  margin: 0;
+}
+.program-content-container p {
+  color: #f7f7f7;
+  margin: 0;
+}
+.program-content-container .button {
+  margin-top: 26px;
+}
+
+.program-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+  padding: 13px;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
