@@ -64,7 +64,7 @@ p {
 }
 
 h3 {
-  margin-top: 20px;
+  margin-top: 32px;
   margin-bottom: 11px;
 }
 
@@ -121,6 +121,12 @@ a:link {
   padding: 26px 42px;
 }
 
+.white-box {
+  background-color: white;
+  border: 2px solid $secondary-shade2;
+  padding: 19px;
+}
+
 // Debug only
 .DEBUG-DISPLAY-NONE {
   display: none;
@@ -162,6 +168,10 @@ nav {
 .welcome-content-container {
   @include welcomeHeadings();
   padding: 99px 18px 74px 18px;
+
+  h3 {
+    margin-top: 16px;
+  }
 }
 
 .welcome-title {
@@ -188,8 +198,7 @@ nav {
 }
 
 .program-content-container {
-  padding: 12px;
-  padding-bottom: 36px;
+  padding: 0 12px 36px 12px;
 
   h3 {
     color: $background;
@@ -301,11 +310,19 @@ nav {
     color: $primary-shade1;
     margin-top: 17px;
   }
+
+  .white-box {
+    margin: 43px 0 23px 0;
+  }
 }
 
-.about-description {
-  background-color: white;
-  border: 2px solid $secondary-shade2;
-  margin: 43px 0 23px 0;
-  padding: 19px;
+// Logo
+.logo-content-container {
+  padding: 0 23px;
+  text-align: center;
+
+  .white-box {
+    width: 100%;
+    margin: 34px 0;
+  }
 }

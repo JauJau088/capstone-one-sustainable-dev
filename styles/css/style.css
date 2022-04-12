@@ -31,7 +31,7 @@ p {
 }
 
 h3 {
-  margin-top: 20px;
+  margin-top: 32px;
   margin-bottom: 11px;
 }
 
@@ -85,6 +85,12 @@ a:link {
   font-size: 16px;
   font-weight: 400;
   padding: 26px 42px;
+}
+
+.white-box {
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  padding: 19px;
 }
 
 .DEBUG-DISPLAY-NONE {
@@ -141,6 +147,9 @@ nav {
 .welcome-content-container h4 {
   font-size: 12px;
 }
+.welcome-content-container h3 {
+  margin-top: 16px;
+}
 
 .welcome-title {
   background-image: url("../../images/backgrounds/abstract-prism.png");
@@ -165,8 +174,7 @@ nav {
 }
 
 .program-content-container {
-  padding: 12px;
-  padding-bottom: 36px;
+  padding: 0 12px 36px 12px;
 }
 .program-content-container h3 {
   color: #f7f7f7;
@@ -279,12 +287,17 @@ nav {
   color: #ff4f38;
   margin-top: 17px;
 }
-
-.about-description {
-  background-color: white;
-  border: 2px solid #d3d3d3;
+.about-content-container .white-box {
   margin: 43px 0 23px 0;
-  padding: 19px;
+}
+
+.logo-content-container {
+  padding: 0 23px;
+  text-align: center;
+}
+.logo-content-container .white-box {
+  width: 100%;
+  margin: 34px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
