@@ -8,6 +8,29 @@ $secondary-shade1: #555555;
 $secondary-shade2: #d3d3d3;
 $background: #f7f7f7;
 
+@mixin welcomeHeadings {
+  h1 {
+    font-weight: 900;
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: $primary-shade1;
+  }
+  
+  h3 {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  h4 {
+    font-size: 12px;
+  }
+}
+
 // Global
 html {
   box-sizing: border-box;
@@ -61,6 +84,11 @@ button {
   font-family: 'Encode Sans', Arial, sans-serif;
 }
 
+a:link {
+  font-weight: 700;
+  color: $secondary-shade1;
+}
+
 // Global classes
 .flex-row {
   display: flex;
@@ -101,6 +129,7 @@ button {
 // Nav
 .nav-container {
   position: fixed;
+  z-index: 100;
 }
 
 nav {
@@ -121,6 +150,7 @@ nav {
   border-bottom: 5px solid $secondary-shade1;
 }
 
+// MAIN PAGE
 // Welcome
 .bg-welcome {
   background-image: url('../../images/backgrounds/bg-welcome.png');
@@ -130,31 +160,8 @@ nav {
 }
 
 .welcome-content-container {
+  @include welcomeHeadings();
   padding: 99px 18px 74px 18px;
-
-  h1 {
-    font-weight: 900;
-    font-size: 30px;
-  }
-  
-  h2 {
-    font-weight: 400;
-    font-size: 20px;
-  }
-  
-  h3 {
-    font-weight: 800;
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-  
-  h4 {
-    font-size: 12px;
-  }
-}
-
-.welcome-subtitle {
-  color: $primary;
 }
 
 .welcome-title {
@@ -276,4 +283,29 @@ nav {
 .speaker-info {
   display: flex;
   flex-direction: column;
+}
+
+// ABOUT PAGE
+// About
+.about-content-container {
+  @include welcomeHeadings();
+  padding: 83px 18px 74px 32px;
+
+  h1,
+  h2,
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    color: $primary-shade1;
+    margin-top: 17px;
+  }
+}
+
+.about-description {
+  background-color: white;
+  border: 2px solid $secondary-shade2;
+  margin: 43px 0 23px 0;
+  padding: 19px;
 }

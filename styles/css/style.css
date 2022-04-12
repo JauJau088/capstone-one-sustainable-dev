@@ -51,6 +51,11 @@ button {
   font-family: "Encode Sans", Arial, sans-serif;
 }
 
+a:link {
+  font-weight: 700;
+  color: #555555;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -88,6 +93,7 @@ button {
 
 .nav-container {
   position: fixed;
+  z-index: 100;
 }
 
 nav {
@@ -125,6 +131,7 @@ nav {
 .welcome-content-container h2 {
   font-weight: 400;
   font-size: 20px;
+  color: #ff4f38;
 }
 .welcome-content-container h3 {
   font-weight: 800;
@@ -133,10 +140,6 @@ nav {
 }
 .welcome-content-container h4 {
   font-size: 12px;
-}
-
-.welcome-subtitle {
-  color: #ec5242;
 }
 
 .welcome-title {
@@ -245,6 +248,43 @@ nav {
 .speaker-info {
   display: flex;
   flex-direction: column;
+}
+
+.about-content-container {
+  padding: 83px 18px 74px 32px;
+}
+.about-content-container h1 {
+  font-weight: 900;
+  font-size: 30px;
+}
+.about-content-container h2 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ff4f38;
+}
+.about-content-container h3 {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+.about-content-container h4 {
+  font-size: 12px;
+}
+.about-content-container h1,
+.about-content-container h2,
+.about-content-container p {
+  text-align: center;
+}
+.about-content-container h1 {
+  color: #ff4f38;
+  margin-top: 17px;
+}
+
+.about-description {
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  margin: 43px 0 23px 0;
+  padding: 19px;
 }
 
 /*# sourceMappingURL=style.css.map */
