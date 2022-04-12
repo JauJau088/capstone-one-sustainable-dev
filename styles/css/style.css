@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Encode+Sans:wght@300;400;500;600;700;900&family=Lato:wght@300;400;500;600;700;900&display=swap");
-@font-face {
-  font-family: CocoGoose;
-  src: url("../../fonts/Cocogoose Pro-trial.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;900&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -23,6 +19,27 @@ p {
   font-weight: 500;
   line-height: 1.7em;
   font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 11px;
+}
+
+hr {
+  width: 31px;
+  border: 1px solid #ec5242;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 ul {
@@ -104,22 +121,18 @@ nav {
 .welcome-content-container h1 {
   font-weight: 900;
   font-size: 30px;
-  margin: 0;
 }
 .welcome-content-container h2 {
   font-weight: 400;
   font-size: 20px;
-  margin: 0;
 }
 .welcome-content-container h3 {
   font-weight: 800;
   font-size: 24px;
-  margin: 0;
   margin-bottom: 8px;
 }
 .welcome-content-container h4 {
   font-size: 12px;
-  margin: 0;
 }
 
 .welcome-subtitle {
@@ -142,9 +155,6 @@ nav {
   margin: 24px 0 16px 0;
   padding: 19px;
 }
-.welcome-description p {
-  margin: 0;
-}
 
 .bg-program {
   background-image: url("../../images/backgrounds/x-pattern.svg");
@@ -157,24 +167,14 @@ nav {
 }
 .program-content-container h3 {
   color: #f7f7f7;
-  margin-top: 20px;
-  margin-bottom: 11px;
-}
-.program-content-container hr {
-  width: 31px;
-  border: 1px solid #ec5242;
-  margin: 0;
-  margin-bottom: 24px;
 }
 .program-content-container h4 {
   width: 90px;
   min-width: 90px;
   color: #ec5242;
-  margin: 0;
 }
 .program-content-container p {
   color: #f7f7f7;
-  margin: 0;
 }
 .program-content-container .button {
   margin-top: 26px;
@@ -185,6 +185,66 @@ nav {
   margin-bottom: 8px;
   padding: 13px;
   padding-left: 0;
+}
+
+.speakers-content-container hr {
+  margin-bottom: 37px;
+}
+
+.speaker-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 33px;
+  margin: 0 13px 36px 13px;
+}
+
+.speaker-card {
+  display: flex;
+}
+.speaker-card h4 {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.speaker-card h5 {
+  color: #ec5242;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: italic;
+}
+.speaker-card hr {
+  width: 14px;
+  border: 1px solid #d3d3d3;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.speaker-card p {
+  font-size: 10px;
+  line-height: normal;
+}
+
+.speaker-img-container {
+  position: relative;
+  width: 104px;
+  min-width: 104px;
+  height: 104px;
+  min-height: 104px;
+  margin-right: 17px;
+  background-image: url("../../images/backgrounds/chess-pattern.svg");
+  background-repeat: no-repeat;
+}
+.speaker-img-container img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.speaker-info {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
