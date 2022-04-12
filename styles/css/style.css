@@ -332,4 +332,11 @@ nav {
   color: #f7f7f7;
 }
 
+.partner-content-container {
+  background-color: #555555;
+}
+.partner-content-container h3 {
+  color: #f7f7f7;
+}
+
 /*# sourceMappingURL=style.css.map */
