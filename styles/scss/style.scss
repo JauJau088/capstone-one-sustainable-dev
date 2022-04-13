@@ -4,32 +4,9 @@
 $primary: #ec5242;
 $primary-shade1: #ff4f38;
 $secondary: #272a31;
-$secondary-shade1: #555555;
+$secondary-shade1: #555;
 $secondary-shade2: #d3d3d3;
 $background: #f7f7f7;
-
-@mixin welcomeHeadings {
-  h1 {
-    font-weight: 900;
-    font-size: 30px;
-  }
-  
-  h2 {
-    font-weight: 400;
-    font-size: 20px;
-    color: $primary-shade1;
-  }
-  
-  h3 {
-    font-weight: 800;
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-  
-  h4 {
-    font-size: 12px;
-  }
-}
 
 // Global
 html {
@@ -166,22 +143,40 @@ nav {
 }
 
 .welcome-content-container {
-  @include welcomeHeadings();
   padding: 99px 18px 74px 18px;
 
+  h1 {
+    font-weight: 900;
+    font-size: 30px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: $primary-shade1;
+  }
+
   h3 {
+    font-weight: 800;
+    font-size: 24px;
     margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    font-size: 12px;
   }
 }
 
-.welcome-title {
-  background-image: url('../../images/backgrounds/abstract-prism.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+@supports (-webkit-background-clip: text) {
+  .welcome-title {
+    background-image: url('../../images/backgrounds/abstract-prism.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 .welcome-description {
@@ -297,18 +292,35 @@ nav {
 // ABOUT PAGE
 // About
 .about-content-container {
-  @include welcomeHeadings();
   padding: 83px 18px 74px 32px;
+
+  h1 {
+    font-weight: 900;
+    font-size: 30px;
+    color: $primary-shade1;
+    margin-top: 17px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+    color: $primary-shade1;
+  }
+
+  h3 {
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
 
   h1,
   h2,
   p {
     text-align: center;
-  }
-
-  h1 {
-    color: $primary-shade1;
-    margin-top: 17px;
   }
 
   .white-box {

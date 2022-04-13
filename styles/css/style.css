@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;900&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -11,7 +12,7 @@ html {
 
 body {
   font-family: "Encode Sans", Arial, sans-serif;
-  color: #555555;
+  color: #555;
   margin: 0;
 }
 
@@ -53,7 +54,7 @@ button {
 
 a:link {
   font-weight: 700;
-  color: #555555;
+  color: #555;
 }
 
 .flex-row {
@@ -117,7 +118,7 @@ nav {
 
 .hamburger-line {
   width: 100%;
-  border-bottom: 5px solid #555555;
+  border-bottom: 5px solid #555;
 }
 
 .bg-welcome {
@@ -130,35 +131,38 @@ nav {
 .welcome-content-container {
   padding: 99px 18px 74px 18px;
 }
+
 .welcome-content-container h1 {
   font-weight: 900;
   font-size: 30px;
 }
+
 .welcome-content-container h2 {
   font-weight: 400;
   font-size: 20px;
   color: #ff4f38;
 }
+
 .welcome-content-container h3 {
   font-weight: 800;
   font-size: 24px;
+  margin-top: 16px;
   margin-bottom: 8px;
 }
+
 .welcome-content-container h4 {
   font-size: 12px;
 }
-.welcome-content-container h3 {
-  margin-top: 16px;
-}
 
-.welcome-title {
-  background-image: url("../../images/backgrounds/abstract-prism.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+@supports (-webkit-background-clip: text) {
+  .welcome-title {
+    background-image: url("../../images/backgrounds/abstract-prism.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 .welcome-description {
@@ -176,17 +180,21 @@ nav {
 .program-content-container {
   padding: 0 12px 36px 12px;
 }
+
 .program-content-container h3 {
   color: #f7f7f7;
 }
+
 .program-content-container h4 {
   width: 90px;
   min-width: 90px;
   color: #ec5242;
 }
+
 .program-content-container p {
   color: #f7f7f7;
 }
+
 .program-content-container .button {
   margin-top: 26px;
 }
@@ -212,22 +220,26 @@ nav {
 .speaker-card {
   display: flex;
 }
+
 .speaker-card h4 {
   font-size: 14px;
   margin-bottom: 3px;
 }
+
 .speaker-card h5 {
   color: #ec5242;
   font-size: 11px;
   font-weight: 500;
   font-style: italic;
 }
+
 .speaker-card hr {
   width: 14px;
   border: 1px solid #d3d3d3;
   margin-top: 10px;
   margin-bottom: 12px;
 }
+
 .speaker-card p {
   font-size: 10px;
   line-height: normal;
@@ -243,6 +255,7 @@ nav {
   background-image: url("../../images/backgrounds/chess-pattern.svg");
   background-repeat: no-repeat;
 }
+
 .speaker-img-container img {
   position: absolute;
   bottom: 0;
@@ -261,32 +274,36 @@ nav {
 .about-content-container {
   padding: 83px 18px 74px 32px;
 }
+
 .about-content-container h1 {
   font-weight: 900;
   font-size: 30px;
+  color: #ff4f38;
+  margin-top: 17px;
 }
+
 .about-content-container h2 {
   font-weight: 400;
   font-size: 20px;
   color: #ff4f38;
 }
+
 .about-content-container h3 {
   font-weight: 800;
   font-size: 24px;
   margin-bottom: 8px;
 }
+
 .about-content-container h4 {
   font-size: 12px;
 }
+
 .about-content-container h1,
 .about-content-container h2,
 .about-content-container p {
   text-align: center;
 }
-.about-content-container h1 {
-  color: #ff4f38;
-  margin-top: 17px;
-}
+
 .about-content-container .white-box {
   margin: 43px 0 23px 0;
 }
@@ -295,6 +312,7 @@ nav {
   padding: 0 23px;
   text-align: center;
 }
+
 .logo-content-container .white-box {
   width: 100%;
   margin: 34px 0;
@@ -320,12 +338,14 @@ nav {
   background-color: #ec5242;
   margin-bottom: 14px;
 }
+
 .past-card h4 {
   font-size: 26px;
   font-weight: 700;
   color: #f7f7f7;
   margin-bottom: 13px;
 }
+
 .past-card p {
   font-size: 13px;
   font-weight: 600;
@@ -333,7 +353,7 @@ nav {
 }
 
 .partners-bg {
-  background-color: #555555;
+  background-color: #555;
 }
 
 .partner-content-container h3 {
@@ -343,5 +363,3 @@ nav {
 .footer-content-container {
   padding: 35px 42px;
 }
-
-/*# sourceMappingURL=style.css.map */
