@@ -57,7 +57,23 @@ function addElem(elem, classes, parent) {
 }
 
 // 3. HTML manipulations
-// 3.1. Generate speakers
+// 3.1. Show/hide mobile menu
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+const navAtags = nav.querySelectorAll('a');
+
+hamburger.onclick = () => {
+  nav.classList.remove('mobile-hide');
+};
+
+navAtags.forEach((a) => {
+  a.onclick = () => {
+    nav.classList.add('mobile-hide');
+  };
+});
+
+// 3.2. Generate speakers
 const speakerCardCtr = document.querySelector('.speaker-card-container');
 
 speakers.forEach((speaker) => {

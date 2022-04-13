@@ -10,26 +10,48 @@
 </head>
 <body>
   <!-- Section 0: Nav -->
-  <div class="nav-container flex-row justify-center">
-    <nav>
-      <header class="desktop-only"><!-- Logo --></header>
-      <div class="hamburger mobile-only">
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
+  <div class="all-nav-container flex-column">
+    <a class="hamburger mobile-only">
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+      <div class="hamburger-line"></div>
+    </a>
+    <div class="top-nav-container desktop-only-flex flex-row justify-center">
+      <div class="top-nav">
+        <ul class="social-media flex-row justify-center align-center">
+          <li><a href=""><img src="images/icons/facebook.svg" alt="facebook-icon"></a></li>
+          <li><a href=""><img src="images/icons/twitter.svg" alt="twitter-icon"></a></li>
+        </ul>
+        <ul class="flex-row">
+          <li><a href="">Logout</a></li>
+          <li><a href="">Mypage</a></li>
+          <li><a href="">Korean</a></li>
+        </ul>
       </div>
-      <ul class="menu-list DEBUG-DISPLAY-NONE">
-        <li>About</li>
-        <li>Program</li>
-        <li>Join</li>
-        <li>Sponsor</li>
-        <li>News</li>
-        <li>Donate</li>
-      </ul>
+    </div>
+    <nav class="mobile-hide">
+      <a class="x mobile-only">
+        <div class="x-line"></div>
+        <div class="x-line"></div>
+      </a>
+      <div class="menu-container">
+        <a href="#welcome" class="logo desktop-only-block">
+          <img src="images/logos/event-logo.svg" alt="Logo">
+        </a>
+        <ul class="menu-list">
+          <li><a href="about.html">About</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#">Join</a></li>
+          <li><a href="about.html#partners">Sponsor</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Donate</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
+  <div class="spacer desktop-only-block"></div>
   <!-- Section 1: Welcome -->
-  <section class="flex-row justify-center bg-welcome">
+  <section id="welcome" class="flex-row justify-center bg-welcome">
     <div class="welcome-content-container">
       <h2>"Hello! Sharing world"</h2>
       <h1 class="welcome-title">CREATIVE COMMONS GLOBAL SUMMIT 2015</h1>
@@ -41,7 +63,7 @@
     </div>
   </section>
   <!-- Section 2: Program -->
-  <section class="flex-row justify-center bg-program">
+  <section id="program" class="flex-row justify-center bg-program">
     <div class="program-content-container flex-column align-center">
       <h3>Main Program</h3>
       <hr>
@@ -81,7 +103,7 @@
     </div>
   </section>
   <!-- Section 3: Featured speakers -->
-  <section>
+  <section id="speakers">
     <div class="speakers-content-container flex-column align-center">
       <h3>Featured Speakers</h3>
       <hr>
