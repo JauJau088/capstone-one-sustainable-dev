@@ -199,6 +199,7 @@ nav {
   font-size: 24px;
   margin-top: 16px;
   margin-bottom: 8px;
+  text-align: left;
 }
 .welcome-content-container h4 {
   font-size: 12px;
@@ -317,7 +318,7 @@ nav {
 }
 
 .about-content-container {
-  padding: 83px 18px 74px 32px;
+  padding: 83px 18px 74px 18px;
 }
 .about-content-container h1 {
   font-weight: 900;
@@ -407,7 +408,7 @@ nav {
 @media screen and (min-width: 768px) {
   h3 {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     margin-top: 50px;
   }
@@ -683,6 +684,30 @@ nav {
   .footer-content-container p {
     font-size: 16px;
     font-weight: 600;
+  }
+
+  .about-content-container {
+    padding-bottom: 100px;
+  }
+  .about-content-container h2 {
+    font-size: 28px;
+  }
+  .about-content-container h1 {
+    font-size: 50px;
+    color: #ff4f38;
+    max-width: 600px;
+  }
+  .about-content-container hr {
+    margin-top: 27px;
+    margin-bottom: 33px;
+  }
+  .about-content-container .white-box {
+    max-width: 862px;
+    margin-top: 0;
+    margin-bottom: 55px;
+  }
+  .about-content-container p {
+    font-size: 16px;
   }
 }
 
