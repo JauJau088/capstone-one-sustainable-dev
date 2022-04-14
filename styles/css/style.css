@@ -405,6 +405,18 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  hr {
+    width: 50px;
+    margin-bottom: 50px;
+  }
+
   .mobile-only {
     display: none;
   }
@@ -523,7 +535,7 @@ nav {
   .welcome-content-container {
     width: 100%;
     max-width: 1036px;
-    padding: 129px 0 167px 0;
+    padding: 125px 0 165px 0;
   }
   .welcome-content-container h2 {
     font-size: 42px;
@@ -545,6 +557,42 @@ nav {
 
   .welcome-description {
     max-width: 636px;
+  }
+
+  .program-content-container {
+    max-width: 1036px;
+    padding: 0 0 80px 0;
+  }
+
+  .program-card-container {
+    display: flex;
+  }
+
+  .program-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+    padding: 10px 18px 25px 18px;
+    margin-bottom: 0;
+    margin-right: 2px;
+  }
+  .program-card h4 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .program-card:last-child {
+    margin-right: 0;
+  }
+
+  .see-program {
+    margin-top: 70px;
+    color: #f7f7f7;
+  }
+
+  .see-program:hover {
+    color: #ec5242;
   }
 }
 
