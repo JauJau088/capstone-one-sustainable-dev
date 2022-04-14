@@ -663,8 +663,15 @@ nav {
     margin-right: 2px;
 
     h4 {
+      font-size: 19px;
       width: 100%;
-      margin-bottom: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 13px;
+      font-weight: 400;
     }
   }
 
@@ -686,8 +693,12 @@ nav {
   }
 
   // Speakers
+  .bg-speakers {
+    background-color: $background;
+  }
+
   .speakers-content-container {
-    margin: 0 30px 95px 30px;
+    padding: 0 30px 95px 30px;
 
     hr {
       margin-bottom: 50px;
@@ -746,6 +757,27 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     max-width: 858px;
+  }
+
+  // Footer
+  .bg-footer {
+    background-color: $background;
+  }
+
+  .footer-content-container {
+    display: flex;
+    align-items: center;
+    padding: 70px 30px 90px 30px;
+  
+    img {
+      width: 150px;
+      margin-right: 64px;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 
   // ABOUT PAGE
