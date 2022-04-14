@@ -56,7 +56,7 @@ function addElem(elem, classes, parent) {
   return createdElem;
 }
 
-// 3. HTML manipulations
+// 3. DOM manipulations
 // 3.1. Generate speakers
 const speakerCardCtr = document.querySelector('.speaker-card-container');
 
