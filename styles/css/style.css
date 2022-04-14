@@ -430,6 +430,10 @@ nav {
 .footer-content-container {
   padding: 35px 42px;
 }
+.footer-content-container img {
+  width: 65px;
+  margin-right: 36px;
+}
 
 @media screen and (min-width: 768px) {
   h3 {
