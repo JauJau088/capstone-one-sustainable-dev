@@ -357,8 +357,14 @@ nav {
   text-align: center;
 }
 .logo-content-container .white-box {
-  width: 100%;
+  width: fit-content;
   margin: 34px 0;
+  padding: 17px 70px;
+}
+
+#logo > *:last-child {
+  width: 100%;
+  border: 1px solid #d3d3d3;
 }
 
 .past-content-container {
@@ -686,6 +692,15 @@ nav {
     font-weight: 600;
   }
 
+  .page-about p {
+    font-size: 16px;
+  }
+  .page-about hr {
+    width: 24px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
   .about-content-container {
     padding-bottom: 100px;
   }
@@ -706,8 +721,9 @@ nav {
     margin-top: 0;
     margin-bottom: 55px;
   }
-  .about-content-container p {
-    font-size: 16px;
+
+  .logo-content-container .white-box {
+    margin: 50px 0;
   }
 }
 

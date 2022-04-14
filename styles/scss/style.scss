@@ -405,9 +405,15 @@ nav {
   text-align: center;
 
   .white-box {
-    width: 100%;
+    width: fit-content;
     margin: 34px 0;
+    padding: 17px 70px;
   }
+}
+
+#logo > *:last-child {
+  width: 100%;
+  border: 1px solid $secondary-shade2;
 }
 
 // Past events
@@ -782,6 +788,19 @@ nav {
   }
 
   // ABOUT PAGE
+  // Body
+  .page-about {
+    p {
+      font-size: 16px;
+    }
+
+    hr {
+      width: 24px;
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+  }
+
   // About
   .about-content-container {
     padding-bottom: 100px;
@@ -806,9 +825,12 @@ nav {
       margin-top: 0;
       margin-bottom: 55px;
     }
+  }
 
-    p {
-      font-size: 16px;
+  // Logo
+  .logo-content-container {
+    .white-box {
+      margin: 50px 0;
     }
   }
 }
