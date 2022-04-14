@@ -509,6 +509,7 @@ nav {
     width: 100%;
     max-width: $desktop-max-width;
     height: 36px;
+    margin: 0 30px;
 
     a {
       text-decoration: none;
@@ -555,7 +556,7 @@ nav {
     justify-content: center;
     background-color: white;
     height: 75px;
-    padding: 0;
+    padding: 0 30px;
   }
 
   .menu-container {
@@ -567,6 +568,7 @@ nav {
 
     .logo {
       height: 55px;
+      margin-right: 70px;
     }
 
     img {
@@ -611,7 +613,7 @@ nav {
   .welcome-content-container {
     width: 100%;
     max-width: $desktop-max-width;
-    padding: 125px 0 165px 0;
+    padding: 125px 30px 165px 30px;
 
     h2 {
       font-size: 42px;
@@ -640,9 +642,11 @@ nav {
     max-width: 636px;
   }
 
+  // Program
   .program-content-container {
     max-width: $desktop-max-width;
-    padding: 0 0 80px 0;
+    margin: 0 30px 95px 30px;
+    padding: 0;
   }
 
   .program-card-container {
@@ -675,6 +679,60 @@ nav {
 
   .see-program:hover {
     color: $primary;
+  }
+
+  .see-program:visited {
+    color: $background;
+  }
+
+  // Speakers
+  .speakers-content-container {
+    margin: 0 30px 95px 30px;
+
+    hr {
+      margin-bottom: 50px;
+    }
+  }
+
+  .speaker-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: $desktop-max-width;
+    column-gap: 27px;
+    margin: 0;
+  }
+
+  .speaker-card {
+    h4 {
+      font-size: 22px;
+      margin-top: 12px;
+      margin-bottom: 10px;
+    }
+
+    h5,
+    p {
+      font-size: 12px;
+      line-height: 1.7em;
+    }
+
+    hr {
+      width: 24px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .speaker-img-container {
+    width: 168px;
+    min-width: 168px;
+    height: 168px;
+    min-height: 168px;
+    background-size: 77px;
+    margin-right: 25px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
   }
   // ABOUT PAGE
 }
