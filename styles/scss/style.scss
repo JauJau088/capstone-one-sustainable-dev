@@ -166,16 +166,16 @@ nav {
   border-bottom: 5px solid $secondary-shade1;
 }
 
-.x:hover .x-line {
-  border-bottom: 5px solid $primary;
-}
-
 .x-line:first-child {
   transform: rotate(45deg);
 }
 
 .x-line:last-child {
   transform: rotate(-45deg);
+}
+
+.x:hover .x-line {
+  border-bottom: 5px solid $primary;
 }
 
 .menu-list {
@@ -411,7 +411,7 @@ nav {
   }
 }
 
-#logo > *:last-child {
+.logo-section > *:last-child {
   width: 100%;
   border: 1px solid $secondary-shade2;
 }
@@ -434,7 +434,7 @@ nav {
 .past-card-bg {
   background-position: center center;
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
 }
 
 .past-card {
@@ -478,7 +478,7 @@ nav {
   column-gap: 20px;
 
   img {
-    transform: scale(55%);
+    transform: scale(0.55);
   }
 }
 
@@ -501,7 +501,7 @@ nav {
     text-align: center;
     margin-top: 50px;
   }
-  
+
   hr {
     width: 50px;
     margin-bottom: 50px;
@@ -533,7 +533,25 @@ nav {
   .top-nav-container {
     background-color: $secondary;
   }
-  
+
+  .social-media {
+    img {
+      width: 18px;
+      height: 18px;
+    }
+
+    li {
+      margin-right: 12px;
+    }
+  }
+
+  .menu-list a {
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $secondary-shade1;
+  }
+
   .top-nav {
     display: flex;
     justify-content: end;
@@ -564,21 +582,6 @@ nav {
 
     ul:first-child {
       margin-right: 24px;
-    }
-  }
-
-  .social-media {    
-    img {
-      width: 18px;
-      height: 18px;
-    }
-
-    li {
-      margin-right: 12px;
-    }
-
-    li:last-child {
-      margin-right: 0;
     }
   }
 
@@ -615,13 +618,6 @@ nav {
     align-items: center;
     width: 100%;
     max-width: 666px;
-
-    a {
-      font-size: 13px;
-      font-weight: 600;
-      text-decoration: none;
-      color: $secondary-shade1;
-    }
 
     a:hover {
       color: $primary;
@@ -789,6 +785,10 @@ nav {
     flex-wrap: wrap;
     width: 100%;
     max-width: 858px;
+
+    img {
+      transform: scale(1);
+    }
   }
 
   // Footer
@@ -800,7 +800,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 70px 30px 90px 30px;
-  
+
     img {
       width: 150px;
       margin-right: 64px;
