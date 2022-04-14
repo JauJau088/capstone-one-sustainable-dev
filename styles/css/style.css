@@ -519,6 +519,33 @@ nav {
   .spacer {
     height: 111px;
   }
+
+  .welcome-content-container {
+    width: 100%;
+    max-width: 1036px;
+    padding: 129px 0 167px 0;
+  }
+  .welcome-content-container h2 {
+    font-size: 42px;
+  }
+  .welcome-content-container h1 {
+    max-width: 800px;
+    font-size: 72px;
+  }
+  .welcome-content-container p {
+    font-size: 15px;
+  }
+  .welcome-content-container h3 {
+    font-size: 36px;
+  }
+  .welcome-content-container h4 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .welcome-description {
+    max-width: 636px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
