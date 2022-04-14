@@ -393,7 +393,7 @@ nav {
 }
 
 .partners-bg {
-  background-color: #555;
+  background-color: #414245;
 }
 
 .partner-content-container h3 {
@@ -643,6 +643,18 @@ nav {
   .speaker-img-container img {
     width: 150px;
     height: 150px;
+  }
+
+  .partner-content-container {
+    padding: 0 30px 62px 30px;
+  }
+
+  .partners-logo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 858px;
   }
 }
 

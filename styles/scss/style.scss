@@ -446,7 +446,7 @@ nav {
 
 // Partner
 .partners-bg {
-  background-color: $secondary-shade1;
+  background-color: #414245;
 }
 
 .partner-content-container {
@@ -734,5 +734,19 @@ nav {
       height: 150px;
     }
   }
+
+  // Partners
+  .partner-content-container {
+    padding: 0 30px 62px 30px;
+  }
+
+  .partners-logo-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 858px;
+  }
+
   // ABOUT PAGE
 }
