@@ -409,8 +409,22 @@ nav {
   background-color: #414245;
 }
 
+.partner-content-container {
+  padding-bottom: 38px;
+}
 .partner-content-container h3 {
   color: #f7f7f7;
+}
+
+.partners-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+}
+.partners-logo-container img {
+  transform: scale(55%);
 }
 
 .footer-content-container {

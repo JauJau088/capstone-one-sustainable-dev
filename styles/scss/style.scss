@@ -457,14 +457,28 @@ nav {
   }
 }
 
-// Partner
+// Partners
 .partners-bg {
   background-color: #414245;
 }
 
 .partner-content-container {
+  padding-bottom: 38px;
+
   h3 {
     color: $background;
+  }
+}
+
+.partners-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 20px;
+
+  img {
+    transform: scale(55%);
   }
 }
 
