@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-:fire::fire: demo :fire::fire:
+:fire::fire: https://jaujau088.github.io/capstone-one-sustainable-dev/ :fire::fire:
 
 
 ## Getting Started

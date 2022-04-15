@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700;900&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -171,6 +172,7 @@ nav {
   font-weight: 700;
   line-height: 2.2em;
 }
+
 .menu-list a:hover {
   color: #ec5242;
 }
@@ -185,15 +187,18 @@ nav {
 .welcome-content-container {
   padding: 99px 18px 74px 18px;
 }
+
 .welcome-content-container h1 {
   font-weight: 900;
   font-size: 30px;
 }
+
 .welcome-content-container h2 {
   font-weight: 400;
   font-size: 20px;
   color: #ff4f38;
 }
+
 .welcome-content-container h3 {
   font-weight: 800;
   font-size: 24px;
@@ -201,6 +206,7 @@ nav {
   margin-bottom: 8px;
   text-align: left;
 }
+
 .welcome-content-container h4 {
   font-size: 12px;
 }
@@ -215,11 +221,13 @@ nav {
     color: transparent;
   }
 }
+
 @supports not (-webkit-background-clip: text) {
   .welcome-title {
     color: #ff4f38;
   }
 }
+
 .welcome-description {
   background-color: #f7f7f7;
   border: 3px solid white;
@@ -235,18 +243,22 @@ nav {
 .program-content-container {
   padding: 0 12px 36px 12px;
 }
+
 .program-content-container h3 {
   color: #f7f7f7;
 }
+
 .program-content-container h4 {
   width: 90px;
   min-width: 90px;
   padding-right: 10px;
   color: #ec5242;
 }
+
 .program-content-container p {
   color: #f7f7f7;
 }
+
 .program-content-container .button {
   margin-top: 26px;
 }
@@ -272,22 +284,26 @@ nav {
 .speaker-card {
   display: flex;
 }
+
 .speaker-card h4 {
   font-size: 14px;
   margin-bottom: 3px;
 }
+
 .speaker-card h5 {
   color: #ec5242;
   font-size: 11px;
   font-weight: 500;
   font-style: italic;
 }
+
 .speaker-card hr {
   width: 14px;
   border: 1px solid #d3d3d3;
   margin-top: 10px;
   margin-bottom: 12px;
 }
+
 .speaker-card p {
   font-size: 10px;
   line-height: normal;
@@ -303,6 +319,7 @@ nav {
   background-image: url("../../images/backgrounds/chess-pattern.svg");
   background-repeat: no-repeat;
 }
+
 .speaker-img-container img {
   position: absolute;
   bottom: 0;
@@ -321,34 +338,41 @@ nav {
 .about-content-container {
   padding: 83px 18px 74px 18px;
 }
+
 .about-content-container h1 {
   font-weight: 900;
   font-size: 30px;
   color: #ff4f38;
   margin-top: 17px;
 }
+
 .about-content-container h2 {
   font-weight: 400;
   font-size: 20px;
   color: #ff4f38;
 }
+
 .about-content-container h3 {
   font-weight: 800;
   font-size: 24px;
   margin-bottom: 8px;
 }
+
 .about-content-container h4 {
   font-size: 12px;
 }
+
 .about-content-container h1,
 .about-content-container h2,
 .about-content-container p {
   text-align: center;
 }
+
 .about-content-container a:link {
   font-weight: 700;
   color: #555;
 }
+
 .about-content-container .white-box {
   margin: 43px 0 23px 0;
 }
@@ -357,6 +381,7 @@ nav {
   padding: 0 23px;
   text-align: center;
 }
+
 .logo-content-container .white-box {
   width: fit-content;
   margin: 34px 0;
@@ -394,12 +419,14 @@ nav {
   background-color: rgba(255, 30, 0, 0.6);
   margin-bottom: 14px;
 }
+
 .past-card h4 {
   font-size: 26px;
   font-weight: 700;
   color: #f7f7f7;
   margin-bottom: 13px;
 }
+
 .past-card p {
   font-size: 13px;
   font-weight: 600;
@@ -413,6 +440,7 @@ nav {
 .partner-content-container {
   padding-bottom: 38px;
 }
+
 .partner-content-container h3 {
   color: #f7f7f7;
 }
@@ -424,6 +452,7 @@ nav {
   flex-wrap: wrap;
   column-gap: 20px;
 }
+
 .partners-logo-container img {
   transform: scale(0.55);
 }
@@ -431,6 +460,7 @@ nav {
 .footer-content-container {
   padding: 35px 42px;
 }
+
 .footer-content-container img {
   width: 65px;
   margin-right: 36px;
@@ -478,6 +508,7 @@ nav {
     width: 18px;
     height: 18px;
   }
+
   .social-media li {
     margin-right: 12px;
   }
@@ -498,21 +529,26 @@ nav {
     height: 36px;
     margin: 0 30px;
   }
+
   .top-nav a {
     text-decoration: none;
     color: #f7f7f7;
   }
+
   .top-nav a:hover {
     color: #ec5242;
   }
+
   .top-nav li {
     font-size: 12px;
     font-weight: 400;
     margin-right: 20px;
   }
+
   .top-nav li:last-child {
     margin-right: 0;
   }
+
   .top-nav ul:first-child {
     margin-right: 24px;
   }
@@ -533,10 +569,12 @@ nav {
     width: 100%;
     max-width: 1036px;
   }
+
   .menu-container .logo {
     height: 55px;
     margin-right: 70px;
   }
+
   .menu-container img {
     max-height: 100%;
     width: auto;
@@ -549,13 +587,16 @@ nav {
     width: 100%;
     max-width: 666px;
   }
+
   .menu-list a:hover {
     color: #ec5242;
   }
+
   .menu-list li:last-child {
     padding: 7px 15px;
     border: 4px solid #ec5242;
   }
+
   .menu-list li:last-child a {
     color: #ec5242;
   }
@@ -569,19 +610,24 @@ nav {
     max-width: 1036px;
     padding: 125px 30px 165px 30px;
   }
+
   .welcome-content-container h2 {
     font-size: 42px;
   }
+
   .welcome-content-container h1 {
     max-width: 800px;
     font-size: 72px;
   }
+
   .welcome-content-container p {
     font-size: 15px;
   }
+
   .welcome-content-container h3 {
     font-size: 36px;
   }
+
   .welcome-content-container h4 {
     font-size: 20px;
     font-weight: 500;
@@ -611,6 +657,7 @@ nav {
     padding: 10px 18px 25px 18px;
     margin-bottom: 0;
   }
+
   .program-card h4 {
     font-size: 19px;
     width: 100%;
@@ -618,6 +665,7 @@ nav {
     margin-bottom: 15px;
     padding: 0;
   }
+
   .program-card p {
     font-size: 13px;
     font-weight: 400;
@@ -643,6 +691,7 @@ nav {
   .speakers-content-container {
     padding: 0 30px 95px 30px;
   }
+
   .speakers-content-container hr {
     margin-bottom: 50px;
   }
@@ -660,11 +709,13 @@ nav {
     margin-top: 12px;
     margin-bottom: 10px;
   }
+
   .speaker-card h5,
-.speaker-card p {
+  .speaker-card p {
     font-size: 12px;
     line-height: 1.7em;
   }
+
   .speaker-card hr {
     width: 24px;
     margin-bottom: 18px;
@@ -678,6 +729,7 @@ nav {
     background-size: 77px;
     margin-right: 25px;
   }
+
   .speaker-img-container img {
     width: 150px;
     height: 150px;
@@ -694,6 +746,7 @@ nav {
     width: 100%;
     max-width: 858px;
   }
+
   .partners-logo-container img {
     transform: scale(1);
   }
@@ -707,10 +760,12 @@ nav {
     align-items: center;
     padding: 70px 30px 90px 30px;
   }
+
   .footer-content-container img {
     width: 150px;
     margin-right: 64px;
   }
+
   .footer-content-container p {
     font-size: 16px;
     font-weight: 600;
@@ -719,6 +774,7 @@ nav {
   .page-about p {
     font-size: 16px;
   }
+
   .page-about hr {
     width: 24px;
     margin-top: 18px;
@@ -728,18 +784,22 @@ nav {
   .about-content-container {
     padding-bottom: 100px;
   }
+
   .about-content-container h2 {
     font-size: 28px;
   }
+
   .about-content-container h1 {
     font-size: 50px;
     color: #ff4f38;
     max-width: 600px;
   }
+
   .about-content-container hr {
     margin-top: 27px;
     margin-bottom: 33px;
   }
+
   .about-content-container .white-box {
     max-width: 862px;
     margin-top: 0;
@@ -764,12 +824,12 @@ nav {
     margin: 0;
     padding: 15px;
   }
+
   .past-card h4 {
     font-size: 32px;
   }
+
   .past-card p {
     font-size: 17px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
